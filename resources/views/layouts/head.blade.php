@@ -1,45 +1,84 @@
-  <head>
-    <meta charset="utf-8">
-    <title>Crowd Invest</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph 
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">-->
-    
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="img/icons/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
-    <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
-    
-    <!-- Bootstrap CSS File -->
-    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!-- Libraries CSS Files -->
-    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="/lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
-    <link href="/lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
-    
-    <!-- Main Stylesheet File -->
-    <link href="/css/style.css" rel="stylesheet">
-    
-    <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
-    <link href="/css/colour-blue.css" id="colour-scheme" rel="stylesheet">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Crowd Invest</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+        
+        html,
+        body {
+            height: 100%;
+        }
+        /* Navigation*/
+        
+        .navbar {
+            background-color: transparent;
+        }
+        
+        .top-nav-collapse {
+            background-color: #304a74;
+        }
+        
+        footer.page-footer {
+            background-color: #304a74;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+        /* Carousel*/
+        
+        .carousel {
+            height: 50%;
+        }
+        
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+        
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        /*Caption*/
+        
+        .flex-center {
+            color: #fff;
+        }
+    </style>
+
+</head>

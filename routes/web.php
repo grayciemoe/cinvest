@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', 'OpportunityController@index');
+Route::get('/', 'OpportunityController@home');
 Route::get('/opportunity/create', 'OpportunityController@create');
 Route::post('/opportunity/post','OpportunityController@store');
+Route::get('/opportunity', 'OpportunityController@index');
+Route::get('/opportunity/{opportunity}', 'OpportunityController@show');
 
 Route::get('/industry/create', 'IndustryController@create');
 Route::post('/industry/post', 'IndustryController@store');

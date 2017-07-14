@@ -13,16 +13,32 @@ class OpportunityController extends Controller
 
     Public function index(){
 
-    	$opportunities=Opportunity::oldest()->get();
-       
+    	$opportunities=Opportunity::paginate(3);
+        $industries=Industry::all();
+        $opps=$opportunities;
        // dd($opportunities);
-    	return view ('home.index', compact('opportunities'));
+    	return view ('opportunity.index', compact('opportunities','industries'));
+    }
+
+    Public function home(){
+
+        $opportunities=Opportunity::oldest()->get();
+        $industries=Industry::all();
+       // dd($opportunities);
+        return view ('homepage.index', compact('opportunities','industries'));
     }
 
     public function create(){
         $industries=Industry::all();
 
     	return view('opportunity.create', compact(('industries')));
+    }
+
+     public function show(Opportunity $opportunity){
+        
+        $industries=Industry::all();
+
+        return view('opportunity.show', compact('opportunity','industries'));
     }
 
     public function store(){

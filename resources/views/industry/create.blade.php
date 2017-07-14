@@ -1,5 +1,11 @@
 @extends('layouts.master')
 @section('content')
+@include('layouts.nav1')
+<div class="row">
+	<p style="color:white;">
+	<br/>
+	<br/>	
+	</p>
 </div>
 <div class="container">
 	<h2>Add Industry</h2>
